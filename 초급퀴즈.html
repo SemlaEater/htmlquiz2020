@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초급 퀴즈</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body bgcolor="#B6CEC7">
+    <h1>Quiz</h1>
+    <p> confirmation의 뜻은?</p>
+    <form name="quiz">
+        <input type="radio" name="word" value="blank1">미식가
+        <input type="radio" name="word" value="blank2">빈번한
+        <input type="radio" name="word" value="blank3">관대한
+        <input type="radio" name="word" value="blank4">확정서
+        <input type="button" name="button" value="정답확인" onclick="Question()">
+    </form>
+    <p id="check"></p>
+
+
+    <script type="text/javascript">
+        function Question() {
+            if (quiz.word[3].checked == true)
+                document.getElementById("check").innerHTML = "NICE JOB!";
+            else
+                document.getElementById("check").innerHTML = "TRY AGAIN ;(";
+        }
+
+        var voca_1 = ["assume", "culinary", "condense", "confirmation", "binding", "mutually", "municipal", "generous", "tolerant", "resemble", "dignity", "gourmet", "frequent", "efficiency", "policy", "potter", "coworker", "clerk", "monitor", "handle"];
+        var mean_1 = ["추정하다", "요리의", "농축하다", "확정서", "의무적인", "서로", "시의", "관대한", "관대한", "닮다", "위엄", "미식가", "빈번한", "효율", "규정", "도예가", "동료", "점원", "감시하다", "다루다"];
+
+
+    </script>
+</body>
+
+</html>

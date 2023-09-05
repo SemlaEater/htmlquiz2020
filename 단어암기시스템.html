@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC 단어 암기 시스템</title>
+    <style>
+        #title{
+            position: fixed;
+            top: 380px;
+            left: 825px;
+            color: #D8E0BB;
+            font-weight: 900;
+        }
+
+        #button1{
+            position: fixed;
+            top: 500px;
+            left: 750px;
+            background-color: #B6CEC7;
+            width: 100px;
+        }
+        #button2{
+            position: fixed;
+            top: 500px;
+            left: 900px;
+            background-color: #B6A3C3;
+            width: 100px;
+        }
+        #button3{
+            position: fixed;
+            top: 500px;
+            left: 1050px;
+            background-color: #7268A6;
+            width: 100px;
+        }
+        
+    </style>
+    <script>
+        function bgcolorchange(bg_color){
+        document.bgColor=bg_color;
+    }
+    </script>
+</head>
+<body bgcolor="#6B3074" >    
+    <h1 id="title">TOEIC VOCA 퀴즈!</h1>
+    <button id="button1" value="easy" onClick="location.href='초급.html'"><h1>초급</h1></button>
+    <button id="button2"value="expert" onClick="location.href='중급.html'"><h1>중급</h1></button>
+    <button id="button3"value="hard" onClick="location.href='고급.html'"><h1>고급</h1></button>
+    
+
+    <script>
+    var voca_1= ["assume","culinary","condense","confirmation","binding","mutually","municipal","generous","tolerant","resemble","dignity","gourmet","frequent","efficiency","policy","potter","coworker","clerk","monitor","handle"];
+    var mean_1=["추정하다","요리의","농축하다","확정서","의무적인","서로","시의","관대한","관대한","닮다","위엄","미식가","빈번한","효율","규정","도예가","동료","점원","감시하다","다루다"];
+
+    var voca_2= ["accrue","confiscate","irritate","punctual","preach","vicious","fortify","contempt","despise","reconsider","adolescent","affluent","rectify","vulnerable","harsh","sincere","considerable","unauthorized","due","specific"];
+    var mean_2=["얻어지다","몰수하다","짜증나게하다","시간을지키는","설교하다","부도덕한","견고하게하다","멸시","경멸하다","재고하다","청소년","부유한","바로잡다","취약한","모진","충심의","무시할수없는","승인되지않은","만기가된","명확한"];
+
+    var voca_3= ["exemplify","substitute","elicit","worship","servitude","pillar","implore","be laid off","avail","endeavor","revoke","elicit","elusive","hectic","refinery","pinnacle","indicative","eligible","fatiguing","lingering"];
+    var mean_3=["예시하다","대리의","끌어내다","숭배하다","노예상태","주석","간청하다","급증하다","도움되다","노력하다","취소하다","끌어내다","회피하는","매우바쁜","공장","정점","나타내는","적격의","고된","질질끄는"];
+
+   
+
+    
+    </script>
+    
+</body>
+</html>

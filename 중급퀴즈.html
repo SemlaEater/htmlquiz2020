@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중급 퀴즈</title>
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+    <body bgcolor="#B6A3C3">
+        <h1>Quiz</h1>
+        <p> unauthorized의 뜻은?</p>
+        <form name="quiz">
+         <input type="radio" name="word" value="blank1">명확한
+         <input type="radio" name="word" value="blank2">승인되지않은
+         <input type="radio" name="word" value="blank3">부유한
+         <input type="radio" name="word" value="blank4">충심의
+         <input type="button" name="button" value="정답확인" onclick="Question()">
+        </form>
+        <p id="check"></p>
+
+
+        <script type="text/javascript">
+         function Question() {
+          if(quiz.word[1].checked==true)
+            document.getElementById("check").innerHTML="NICE JOB!";
+          else 
+            document.getElementById("check").innerHTML="TRY AGAIN ;(";
+        }
+       
+         
+       
+    </script>
+</body>
+</html>

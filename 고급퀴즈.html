@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중급 퀴즈</title>
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+    <body bgcolor="#7268A6">
+        <h1>Quiz</h1>
+        <p> '예시하다'의 뜻을 가진 단어는?</p>
+        <form name="quiz">
+         <input type="radio" name="word" value="blank1">implore
+         <input type="radio" name="word" value="blank2">substitute
+         <input type="radio" name="word" value="blank3">exemplify
+         <input type="radio" name="word" value="blank4">endeavor
+         <input type="button" name="button" value="정답확인" onclick="Question()">
+        </form>
+        <p id="check"></p>
+
+
+        <script type="text/javascript">
+         function Question() {
+          if(quiz.word[2].checked==true)
+            document.getElementById("check").innerHTML="NICE JOB!";
+          else 
+            document.getElementById("check").innerHTML="TRY AGAIN ;(";
+        }
+       
+         
+       
+    </script>
+</body>
+</html>

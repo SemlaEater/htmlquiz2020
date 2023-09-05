@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급</title>
+
+    <style>
+        #title {
+            position: relative;
+
+            text-align: center;
+            color:#B6CEC7;
+
+        }
+        #cotitle {
+            position: relative;
+            text-align: right;
+            color:#B6CEC7;
+
+        }
+        .boxlist {
+           
+            width: 450px;
+            height:200px;
+            text-align: center;
+            margin: 0:auto;
+            border: 4px dashed #D8E0BB;
+            float: left;
+            font-size: 23px; 
+            color: #D8E0BB;
+            line-height:100px;     
+        }
+       
+        .boxlist:hover {
+            background-color:  #B6CEC7;
+            text-align: center;
+            color:#6B3074;
+        }
+
+        .mean {
+            text-align: center;
+            font-weight: 900;
+
+        }
+        #button1 {
+            position: fixed;
+            top: 10px;
+            right: 50px;
+            width: 100px;
+            height: 50px;
+        }
+        #button2{
+            position: fixed;
+            top: 10px;
+            left: 50px;
+            width: 100px;
+            height: 50px; 
+        }
+    </style>
+</head>
+
+<body bgcolor="#7268A6">
+    <h1 id="title">고급 어휘 Check</h1>
+    <h4 id="cotitle">🚩단어 위에 커서를 올려놓으면 단어를 확인할 수 있습니다.</h4>
+    <button id="button1" value="home" onClick="'고급퀴즈.html'">QUIZ
+    <button id="button2" value="next" onClick="location.href='단어암기시스템.html'">
+        <h3>home🏠</h3>
+    </button>
+
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='exemplify <br>예시하다'" onMouseOut="this.innerHTML='exemplify'">exemplify</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='substitute <br>대리의'" onMouseOut="this.innerHTML='substitute'">substitute</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='elicit <br>끌어내다'" onMouseOut="this.innerHTML='elicit'">elicit</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='worship <br>숭배하다'" onMouseOut="this.innerHTML='worship'">worship</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='servitude <br>노예상태'" onMouseOut="this.innerHTML='servitude'">servitude</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='pillar <br>주석'" onMouseOut="this.innerHTML='pillar'">pillar</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='implore <br>간청하다'" onMouseOut="this.innerHTML='implore'">implore</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='be laid off <br>급증하다'" onMouseOut="this.innerHTML='be laid off'">be laid off</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='avail <br>도움되다'" onMouseOut="this.innerHTML='avail'">avail</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='endeavor <br>노력하다'" onMouseOut="this.innerHTML='endeavor'">endeavor</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='revoke <br>취소하다'" onMouseOut="this.innerHTML='revoke'">revoke</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='elicit <br>끌어내다'" onMouseOut="this.innerHTML='elicit'">elicit</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='elusive <br>회피하는'" onMouseOut="this.innerHTML='elusive'">elusive</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='hectic <br>매우바쁜'" onMouseOut="this.innerHTML='hectic'">hectic</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='refinery <br>공장'" onMouseOut="this.innerHTML='refinery'">refinery</div>
+    <div class="boxlist" href="" onMouseOver="this.innerHTML='pinnacle <br>정점'" onMouseOut="this.innerHTML='pinnacle'">pinnacle</div>
+  
+        <script>
+            var voca_3= ["exemplify","substitute","elicit","worship","servitude","pillar","implore","be laid off","avail","endeavor","revoke","elicit","elusive","hectic","refinery","pinnacle","indicative","eligible","fatiguing","lingering"];
+    var mean_3=["예시하다","대리의","끌어내다","숭배하다","노예상태","주석","간청하다","급증하다","도움되다","노력하다","취소하다","끌어내다","회피하는","매우바쁜","공장","정점","나타내는","적격의","고된","질질끄는"];
+        </script>
+</body>
+
+</html>
